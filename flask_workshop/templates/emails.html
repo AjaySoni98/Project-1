@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Up2Date</title>	
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Chicle|Lobster" rel="stylesheet">
+  </head> 
+<body>
+  <div class="web">  
+    <div class="container"> 
+        <ul>
+          <li1 style=float:left><a href="/emails">Up2Date</a></li1>
+          <li><a href="/">About us</a></li>
+          <li><a href="http://www.shahandanchor.com/contact-us/">Contact</a></li>
+          <li><a href="/">Features</a></li>
+          <li><a href="https://calendly.com/pages/integrations">Integration</a></li>
+          <li><a href="http://www.shahandanchor.com/our-recruiters/">Partners</a></li>
+        </ul> 
+        <ul> 
+            <li><a href="/">Logout</a></li>
+            <li>{{ result[0] }}</li>
+        </ul>
+      <div class="title">
+        <h1>Welcome {{ result[0] }}  </h1>
+        <h1>to Up2Date</h1>
+       </div>
+      
+    </div>
+    <div class="block-2">
+      <div class="hoot"><h1>Here is what you can do!</h1></div>
+        <div class="img-block1" >
+                <h2><a href='/view'>View your Schedule</a></h2>
+               <img src= 'https://image.flaticon.com/icons/svg/138/138778.svg' height="250px" width="250px">
+            </div>
+            <div class="img-block1" >
+                   <h2><a href='/meeting'>Schedule a Meeting</a></h2>
+                <img src= 'https://image.flaticon.com/icons/svg/138/138783.svg' height="250px" width="250px">
+                </div>
+                <div class="img-block1" >
+                  <h2><a href="/event">Schedule an Event</a></h2>
+                  <img src= 'https://image.flaticon.com/icons/svg/138/138775.svg' height="250px" width="250px">
+                    </div>
+  </div>  
+  <div class="footer">
+      <p>Footer</p>
+    </div>
+</body>
+</html>
